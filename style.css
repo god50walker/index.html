@@ -1,0 +1,314 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* HEADER */
+.school-header {
+    background-color: hsl(256, 89%, 32%);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.school-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.school-header p {
+    color: #facc15;
+    font-size: 16px;
+}
+
+/* NAVIGATION BAR */
+nav {
+    background-color: hwb(256 3% 6%);
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 12px;
+    display: block;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #facc15;
+    color: #064e3b;
+}
+
+/* HOME SECTION */
+.hero {
+    background: linear-gradient(
+        rgba(0, 50, 35, 0.7),
+        rgba(0, 50, 35, 0.7)
+    ),
+    url("C:/Users/STUDENT/Desktop/hy/Mutovu Technical School Entrance.png")
+    center/cover no-repeat;
+
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #facc15;
+    color: #064e3b;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* CONTENT SECTIONS */
+.section {
+    padding: 45px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #064e3b;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* CONTENT CARDS */
+.card {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #047857;
+    margin-bottom: 12px;
+}
+
+/* TIMETABLE */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #047857;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e5eee9;
+}
+
+/* FOOTER */
+footer {
+    background-color: #064e3b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+
+    .school-header h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 30px 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* ALL CONTENT SECTIONS */
+.content-section {
+    padding: 60px 8%;
+    text-align: center;
+    min-height: 250px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-section h2 {
+    color: #064e3b;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* HOME SECTION */
+.home {
+    background: linear-gradient(135deg, #064e3b, #047857);
+    color: white;
+    padding: 110px 20px;
+}
+
+.home h1 {
+    font-size: 42px;
+}
+
+.home h2 {
+    color: #facc15;
+    margin: 15px 0;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    border-top: 4px solid #047857;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #047857;
+    margin-bottom: 15px;
+}
+
+/* DIFFERENT BACKGROUNDS */
+#news, #classes, #tutorial {
+    background: #f4f7f5;
+}
+
+#staff, #entertainment, #notes {
+    background: #e5eee9;
+}
+
+#announcement, #advertisement {
+    background: white;
+}
+
+/* TIMETABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+th {
+    background: #047857;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #064e3b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 768px) {
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .content-section {
+        padding: 40px 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
